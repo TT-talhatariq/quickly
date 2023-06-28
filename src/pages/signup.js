@@ -35,7 +35,7 @@ const Signup = () => {
   const handleConfirmPasswordChange = (e) => {
     setConfirmPassword(e.target.value)
 
-    if (password !== confirmPassword) {
+    if (password !== e.target.value) {
       setError('Password and Confirm Password do not match')
       return
     }
